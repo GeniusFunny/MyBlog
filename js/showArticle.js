@@ -25,7 +25,7 @@ var showArticle = (function(){
 
 
 
-		infoAuthor.innerHTML = "作者:" + "杨航" + "&emsp;";
+		infoAuthor.innerHTML = "作者:" + source.user.name + "&emsp;";
 		infoAuthor.addEventListener('click',function(){
 			alert("前往作者");
 			//将作者id存在sessition中，点击后加载作者信息

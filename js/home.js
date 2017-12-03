@@ -11,7 +11,7 @@ var addArticle = (function(){
 		var buttonDiv = document.createElement('div');
 		var button = document.createElement('button');
 		var hr = document.createElement('hr');
-		var showArticleUrl = url + '/'+ source.id;
+		let showArticleUrl = url + '/'+ source.id;
 		alert(showArticleUrl);
 		title.innerHTML = source.name;
 		title.classList.add('centerPosition');

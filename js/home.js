@@ -12,7 +12,6 @@ var addArticle = (function(){
 		var button = document.createElement('button');
 		var hr = document.createElement('hr');
 		let showArticleUrl = url + '/'+ source.id;
-		alert(showArticleUrl);
 		title.innerHTML = source.name;
 		title.classList.add('centerPosition');
 		artcle.appendChild(title);
@@ -26,7 +25,6 @@ var addArticle = (function(){
 
 
 		infoAuthor.innerHTML = "作者:" + source.user.name;
-		alert(source.user.name);
 		infoAuthor.addEventListener('click',function(){
 			alert("前往作者");
 			//将作者id存在sessition中，点击后加载作者信息

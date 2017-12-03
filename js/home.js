@@ -12,7 +12,7 @@ var addArticle = (function(){
 		var button = document.createElement('button');
 		var hr = document.createElement('hr');
 		var showArticleUrl = url + '/'+ source.id;
-
+		alert(showArticleUrl);
 		title.innerHTML = source.name;
 		title.classList.add('centerPosition');
 		artcle.appendChild(title);

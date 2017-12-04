@@ -1,6 +1,7 @@
 body{
-            background-image: url(../imgs/background2.JPG);
-            background-size: cover;
+            background-image: url(../imgs/2.JPG);
+            background-size: contain;
+            background-position: 50% 50%;
             font-family: "冬青黑体简体中文", "微软雅黑", "宋体", Arial, sans-serif;
         }
         .menu{
@@ -84,7 +85,10 @@ body{
         }
 
     #body img{
-        width: 40vw;
+        width: 20vw;
+    }
+    #body{
+        background-color: rgb(232,222,203);
     }
     ul{
         list-style: none!important;

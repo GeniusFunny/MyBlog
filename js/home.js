@@ -89,7 +89,7 @@ var addArticle = (function(){
 
 	return function(o,url){
 		var source = JSON.parse(o.responseText);
-		var counts = source.per_page;
+		var counts = source.data.length;
 		setPageUrl(source);
 		for(let i = counts - 1; i >= 0; i--){
 			addArticleNode(source.data[i],url);

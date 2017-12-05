@@ -277,7 +277,7 @@
         min-height: 800px;
     }
 @media screen and (max-width: 992px){
-    #body div h1{
+    #body div{
         margin-top: 50px!important;
     }
 }

@@ -1,7 +1,7 @@
 var showArticle = (function(){
 	function showArticleNode(source){
 		var artcle = document.createElement('div');	//文章
-		var title = document.createElement('h1');	//文章标题
+		var title = document.createElement('h3');	//文章标题
 		var info = document.createElement('div');	//文章信息
 		var infoTime = document.createElement('span');
 		var infoViews = document.createElement('span');
@@ -38,7 +38,7 @@ var showArticle = (function(){
 			sessionStorage.setItem('showAuthorUrl',showAuthorUrl);
 			location.href = "showAuthor.html";
 			//将作者id存在sessition中，点击后加载作者信息
-		})
+		});
 		infoAuthorMore.classList.add('info');
 		infoCatologMore.classList.add('info');
 		infoTime.innerHTML = "发表于: " + source.created_at;

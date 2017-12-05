@@ -57,13 +57,17 @@ var addArticle = (function(){
 
 		button.innerHTML = "阅读全文>>>";
 		button.classList.add('btn','btn-default');
+
 		button.addEventListener('click',function(){
 			sessionStorage.setItem('author',source.user.name);
 			sessionStorage.setItem('view',source.view);
 			sessionStorage.setItem('tagName',source.tag.name);
 			sessionStorage.setItem('showArticleUrl',showArticleUrl);
-			location.href = 'showArticle.html';
+			setTimeout(function(){
+				location.href = 'showArticle.html';
+			},800);
 		});
+
 		buttonDiv.appendChild(button);
 		buttonDiv.style.textAlign = "right";
 

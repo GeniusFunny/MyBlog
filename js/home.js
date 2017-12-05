@@ -1,7 +1,7 @@
 var addArticle = (function(){
 	function addArticleNode(source,url){
 		var artcle = document.createElement('div');	//文章
-		var title = document.createElement('h2');	//文章标题
+		var title = document.createElement('h3');	//文章标题
 		var info = document.createElement('div');	//文章信息
 		var infoTime = document.createElement('span');
 		var infoViews = document.createElement('span');

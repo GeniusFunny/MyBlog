@@ -4,8 +4,12 @@ var showArticle = (function(){
 		var title = document.createElement('h3');	//文章标题
 		var info = document.createElement('div');	//文章信息
 		var infoTime = document.createElement('span');
+		var infoTimeMore = document.createElement('span');
+
+		var infoTimeIcon = document.createElement('i');
 		var infoViews = document.createElement('span');
 		var infoCatolog = document.createElement('span');
+		var infoCatologIcon = document.createElement('i');
 		var infoAuthorMore  = document.createElement('a');
 		var infoCatologMore = document.createElement('a');
 
@@ -16,7 +20,7 @@ var showArticle = (function(){
 		let showAuthorUrl =  "http://blog.helloyzy.cn/users/" + source.user_id;
 		let showTagUrl = "http://blog.helloyzy.cn/tags/" + source.tag_id;
 
-		
+		infoCatologIcon.classList.add('fa','fa-fw','fa-tags');
 		title.innerHTML = source.name;
 		title.classList.add('centerPosition');
 		artcle.appendChild(title);
@@ -24,7 +28,7 @@ var showArticle = (function(){
 		infoCatologMore.innerHTML = sessionStorage.getItem('tagName') || 'fuckError';
 		infoAuthorMore.innerHTML = sessionStorage.getItem('author') || 'fuckError';
 		infoViews.innerHTML =  "&emsp;" + "阅读量:" + sessionStorage.getItem('view');
-		infoCatolog.innerHTML = "&emsp;"+"标签: ";
+		infoCatolog.appendChild(infoCatologIcon);
 		infoCatolog.appendChild(infoCatologMore);
 
 		infoCatologMore.addEventListener('click',function(){
@@ -41,7 +45,11 @@ var showArticle = (function(){
 		});
 		infoAuthorMore.classList.add('info');
 		infoCatologMore.classList.add('info');
-		infoTime.innerHTML = "发表于: " + source.created_at;
+		infoTimeMore.innerHTML = source.created_at + "&emsp;";
+		infoTimeIcon.classList.add('fa','fa-calendar-o');
+		infoTime.appendChild(infoTimeIcon);
+		infoTime.appendChild(infoTimeMore);
+
 		info.classList.add('centerPosition');
 		info.appendChild(infoTime);
 		info.appendChild(infoViews);

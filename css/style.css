@@ -121,6 +121,14 @@
             color: white!important;
             border-color: #222!important;
         }
+        #showArticle h3{
+            font-size: 26px;
+            font-weight: 300!important;
+        }
+        #showArticle div{
+            font-size: 14px;
+            color: #555;
+        }
 
     #body img{
         width: 200px;
@@ -156,7 +164,7 @@
         height: 20px;
     }
     #showArticle span{
-        font-size: 16px;
+        font-size: 13px!important;
     }
     #showTagList{
         font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -193,7 +201,7 @@
         font-size: 14px;
     }
     #articles h4{
-        color: #555;
+        color: #555!important;
     }
     #currentPage{
         color: white;
